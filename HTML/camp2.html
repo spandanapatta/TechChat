@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        html{
+            box-sizing:border-box;
+            font-size:62.5%;
+        }
+        body {
+            background-image: url('D:/MiniPro 2/Images/p13.jpg'); /* Add the path to your image */
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: "Poppins", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin-top: 3rem;
+          }
+        .grid{
+            display:grid;
+            width:114em;
+            grid-gap: 6rem;
+            grid-template-columns: repeat(auto-fit,minmax(30rem, 1fr));
+            align-items: start;
+        }
+        .grid-item{
+            background-color:#fff;
+            border-radius: 0.4rem;
+            overflow: hidden;
+            box-shadow: 0 3rem 6rem rgba(0,0,0,0.1);
+            cursor:pointer;
+            transition: 0.2s;
+            border-radius: 20px;
+        }
+        .grid-item:hover{
+            transform: translateY(-0.5%);
+            box-shadow: 0 4rem 8rem rgba(0,0,0,0.5);
+        }
+        .card-img{
+            display: block;
+            width: 100%;
+            height: 20rem;
+            object-fit: cover;
+        }
+        .card-content{
+            padding: 3rem;
+        }
+        .card-header{
+            font-size: 2rem;
+            font-weight: 500;
+            color: #0d0d0d;
+            margin-bottom: 1.5rem;
+        }
+	.card-des{
+	     font-size: 1.5rem;
+	}
+        .card-text{
+            font-size: 1.8rem;
+            letter-spacing: 0.1rem;
+            line-height: 1.7;
+            color: #3d3d3d;
+            margin-bottom: 2.5rem;
+        }
+        .btn1 {
+            appearance: none;
+            background-color: transparent;
+            border: 2px solid #1A1A1A;
+            border-radius: 15px;
+            box-sizing: border-box;
+            color: #3B3B3B;
+            cursor: pointer;
+            display: inline-block;
+            font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+            font-size: 16px;
+            font-weight: 600;
+            line-height: normal;
+            margin: 0;
+            min-height: 60px;
+            min-width: 0;
+            outline: none;
+            padding: 16px 24px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            width: 100%;
+            will-change: transform;
+          }
+          
+          .btn1:disabled {
+            pointer-events: none;
+          }
+          
+          .btn1:hover {
+            color: #fff;
+            background-color: #1A1A1A;
+            box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+            transform: translateY(-2px);
+          }
+          
+          .btn1:active {
+            box-shadow: none;
+            transform: translateY(0);
+          }
+          .btn1 {
+            justify-self: end;
+            margin-left: 10px;
+        }
+
+        @media only screen and (max-width: 60em){
+            body{
+                padding: 3rem;
+            }
+            .grid {
+                grid-gap: 3rem;
+            }
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="grid-item">
+            <div class="card">
+                <img class="card-img" src="D:/MiniPro 2/Images/codingevent1.jpg" alt="Eye Health Education Programme" />    
+                <div class="card-content">
+                    <h4 class="card-header">Coding Challenge-2023</h4>
+			<p class="card-des">The CSE Department of our college is organizing a thrilling coding event. This event is designed to challenge participants' coding abilities and problem-solving skills. With a diverse range of programming challenges and coding competitions, participants will have the opportunity to showcase their talent and compete against their peers. Industry experts will also be present to provide guidance and insights. Don't miss out on this exciting opportunity to sharpen your coding prowess at the CSE Department's coding event!</p>
+                </div>
+            </div>
+        </div>
+    <div class="grid-item">
+        <div class="card">
+            <img class="card-img" src="D:/MiniPro 2/Images/codingevent2.png" alt="Heart Disease/stroke Awarness campaign" /> 
+        
+            <div class="card-content">
+                <h1 class="card-header">TECH NIMBLE 2023,Visakhapatnam</h1>
+                <p class="card-des">This event is tailor-made to display the technical prowess and inventive capabilities of each student, making it a truly exhilarating experience.Advanced workshops, technical exhibitions and technical competitions, which may include programming contests, robotic competitions, app development challenges, Go-karting and other technology-basedcompetitions</p>
+                <a href="https://www.knowafest.com/explore/events/2023/04/2701-tech-nimble-2023-nadimpalli-satyanarayana-raju-institute-technology-techno-fun-festival-visakhapatnam"  style="text-decoration: none;"><button class="btn1" style="width: 90%; min-height: 50px;">Register Now</button></a>
+            </div>
+
+        </div>
+    </div>
+    
+    <div class="grid-item">
+        <div class="card">
+            <img class="card-img" src="D:/MiniPro 2/Images/codingevent3.png" alt="Aim For a Healthy Weight" /> 
+        
+        
+            <div class="card-content">
+                <h1 class="card-header">Codechef Coding Events</h1>
+                <p class="card-des">This weekly event is a highly anticipated gathering for competitive programmers. Participants from around the world can put their skills to the test and compete against each other in a challenging environment.The CodeChef Wednesday contest provides an excellent opportunity to showcase coding expertise and improve algorithmic thinking.Participate in this exciting contest series to hone your programming skills!</p>
+                <a href="https://www.codechef.com/START96"  style="text-decoration: none;"><button class="btn1" style="width: 90%; min-height: 50px;">Register Now</button></a>
+            </div>
+
+        </div>
+    </div>
+    
+
+    </div>
+    
+</body>
+</html>
