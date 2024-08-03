@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login and Registration Forms</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url("D:/MiniPro 2/Images/c22.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .container {
+      width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: transparent;
+      border: 1px solid transparent;
+      border-radius: 5px;
+      box-shadow: transparent;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 60px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="password"] {
+      width: 90%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .btn1 {
+      appearance: none;
+      background-color: transparent;
+      border: 2px solid #1A1A1A;
+      border-radius: 15px;
+      box-sizing: border-box;
+      color: #3B3B3B;
+      cursor: pointer;
+      display: inline-block;
+      font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+      font-size: 16px;
+      font-weight: 600;
+      line-height: normal;
+      margin: 0;
+      min-height: 60px;
+      min-width: 0;
+      outline: none;
+      padding: 16px 24px;
+      text-align: center;
+      text-decoration: none;
+      transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      width: 30%;
+      will-change: transform;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    
+    .btn1:disabled {
+      pointer-events: none;
+    }
+    
+    .btn1:hover {
+      color: #fff;
+      background-color: #1A1A1A;
+      box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+      transform: translateY(-2px);
+    }
+    
+    .btn1:active {
+      box-shadow: none;
+      transform: translateY(0);
+    }
+    .btn1 {
+      justify-self: end;
+      margin-left: 10px;
+  }
+ 
+    .submit-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hide {
+      display: none;
+    }
+  </style>
+  <script>
+    function toggleFormDisplay() {
+      var loginForm = document.getElementById('login-form');
+      var registrationForm = document.getElementById('registration-form');
+
+      loginForm.classList.toggle('hide');
+      registrationForm.classList.toggle('hide');
+    }
+  </script>
+</head>
+<body>
+  <div id="login-form" class="container">
+    <h2>Login Form</h2>
+    <form action="./adminServlet" method="post">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <div class="submit-container">
+          <button class="btn1">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
