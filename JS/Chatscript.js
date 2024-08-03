@@ -1,6 +1,6 @@
 window.onload = function() {
   const firebaseConfig = {
-    apiKey: "AIzaSyC_0vL1iLLzakT_WZYYzdigVsPjb0LXgnE",
+    apiKey: "your-api-key",
     authDomain: "chathere1.firebaseapp.com",
     projectId: "chathere1",
     storageBucket: "chathere1.appspot.com",
