@@ -12,19 +12,14 @@ Welcome to **TechChat**, a dynamic platform designed to enhance communication an
 
 - **Interactive Platform**: Engage with seniors, alumni, and professors through the platform. Get answers to your doubts and valuable advice on your academic and professional journey.
 
-<!-- ## Technologies Used
+## Technologies Used
 
 - **JDBC**: Used for backend operations, facilitating smooth interactions between the application and the database.
   
 - **MySQL**: A robust database management system to store and manage user data efficiently.
 
-- **Twilio**: Integrated for sending SMS notifications to keep users updated about upcoming events. -->
+- **Twilio**: Integrated for sending SMS notifications to keep users updated about upcoming events.
 
-## Technologies Used
-<div align ="left">
-  <img alt="JDBC" src="https://www.flaticon.com/free-icons/database"/>
-  <img alt="CSS3" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"/> 
-  </div>
 
 ## Getting Started
 
